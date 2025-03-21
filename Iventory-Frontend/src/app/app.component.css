@@ -1,0 +1,71 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #17202A, #1C2833);
+    color: white;
+    min-height: 85vh;
+    padding: 50px;
+}
+
+/* Navbar */
+.navbar {
+    padding: 10px 1000px;
+}
+
+.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    color: hsl(184, 100%, 56%);
+}
+
+.navbar-brand:hover {
+    font-size: 22px;
+    color: hsl(184, 100%, 56%);
+    
+}
+
+/* Navigation Links */
+#nav-col {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+
+#nav-col:hover {
+    color: hsl(184, 100%, 56%);
+}
+
+/* Logout Button */
+#logoff {
+    position: absolute;
+    right: 25%;
+}
+
+/* Footer */
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: black;
+    color: white;
+    z-index: 1;
+}
+
+/* Responsive Navbar */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: black;
+        padding: 10px;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    #logoff {
+        position: static;
+        text-align: center;
+    }
+}

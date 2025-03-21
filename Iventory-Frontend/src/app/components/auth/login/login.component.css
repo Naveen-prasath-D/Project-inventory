@@ -1,0 +1,98 @@
+/* Full-Page Background */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Changed from 85vh */
+  width: 100vw; /* Changed from 85vw */
+  background: linear-gradient(135deg, #ffffff);
+  margin: 0; /* Ensure no unwanted margins */
+  padding: 0;
+  overflow: hidden; /* Prevent any scrolling issues */
+}
+
+
+/* Centered Login Card - Now Wider */
+.login-card {
+  background: rgba(255, 255, 255, 0.97);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+  max-width: 550px; /* Increased width */
+  width: 95%;
+  text-align: center;
+  position: relative;
+  transform: translateY(-5%);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Form Input Styling */
+.form-control {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 14px;
+  width: 100%;
+  font-size: 1.1rem;
+  /* Add spacing between input fields */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+
+}
+
+.form-control:focus {
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Error Message Styling */
+.text-danger {
+  font-size: 0.95rem;
+  margin-top: 5px;
+  color: red;
+}
+
+/* Stylish Button */
+.btn-primary {
+  background: linear-gradient(45deg, #024562, #02403e); /* Red-Orange Gradient */
+  border: none;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  width: 100%;
+  color: rgb(253, 253, 253);
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #024562, #02403e);
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 18px rgba(211, 47, 47, 0.4);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10%);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(-5%);
+  }
+}
+
+/* Placeholder Text Styling */
+.form-control::placeholder {
+  color: rgb(210, 235, 249);
+  opacity: 1; /* Ensures the color is fully visible */
+}
+
+.form-control:-ms-input-placeholder { /* For Internet Explorer */
+  color: rgb(210, 235, 249);
+}
+
+.form-control::-ms-input-placeholder { /* For Edge */
+  color: rgb(210, 235, 249);
+}

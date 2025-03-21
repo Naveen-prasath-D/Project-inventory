@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Add Product</h2>
+    <div *ngIf="successMessage" class="alert alert-success">{{ successMessage }}</div>
+    <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+    <form (ngSubmit)="addProduct()">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" [(ngModel)]="product.name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label>Price</label>
+        <input type="number" class="form-control" [(ngModel)]="product.price" name="price" required>
+      </div>
+      <div class="form-group">
+        <label>Quantity</label>
+        <input type="number" class="form-control" [(ngModel)]="product.quantity" name="Quant" required>
+      </div>
+      <div class="form-group">
+        <label>Manufacturer</label>
+        <input type="text" class="form-control" [(ngModel)]="product.manufacturer" name="mfr" required>
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <input type="text" class="form-control" [(ngModel)]="product.description" name="desc" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+  </div>
+  

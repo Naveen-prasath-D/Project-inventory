@@ -1,0 +1,52 @@
+/* Full-Screen Responsive Background */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    padding: 50px;
+    background: linear-gradient(135deg, #16222a, #3a6073);
+    color: white;
+    text-align: center;
+}
+
+/* About Content Box */
+.about-content {
+    max-width: 700px;
+    padding: 40px;
+}
+
+/* Title Styling */
+.about-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Content Text */
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+/* Highlight Key Features */
+.highlight {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Tech Stack Styling */
+.tech {
+    font-weight: bold;
+    color: #00c6ff;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect on Tech Stack */
+.tech:hover {
+    color: #ff9a9e;
+}

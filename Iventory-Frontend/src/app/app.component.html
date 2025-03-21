@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/">Inventory System</a>
+  
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+
+      <li class="nav-item" *ngIf="!authService.isLoggedIn()">
+        <a id="nav-col" class="nav-link" routerLink="/login">Login</a>
+      </li>
+      <li class="nav-item" *ngIf="!authService.isLoggedIn()">
+        <a id="nav-col" class="nav-link" routerLink="/register">Register</a>
+      </li>
+      <li class="nav-item">
+        <a id="nav-col" class="nav-link" routerLink="/products">Products</a>
+      </li>
+      <li class="nav-item">
+        <a id="nav-col" class="nav-link" routerLink="/about">About</a>
+      </li>
+      <li class="nav-item" id="logoff" *ngIf="authService.isLoggedIn()">
+        <button class="btn btn-danger" (click)="logout()">Logout</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-3">
+  <router-outlet></router-outlet>
+</div>

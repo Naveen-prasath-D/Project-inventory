@@ -1,0 +1,80 @@
+/* Full-Page Background */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background: linear-gradient(to bottom, #0f0c29, #00bafe, #3a2b2b);
+}
+
+/* Main Container */
+.main {
+    width: 400px;
+    height: 500px;
+    background: rgba(90, 152, 166, 0.336);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Form Styling */
+h2 {
+
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    height: 45px;
+    background: #0587ae;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #6d44b8;
+}
+
+/* Link Styling */
+p {
+    color: #fff;
+    margin-top: 15px;
+}
+
+a {
+    color: #f8b400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
